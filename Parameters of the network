@@ -1,0 +1,37 @@
+D_min = [0.0 for all nodes]
+
+#For "Low DF" framework:
+D_max = [3.0 for all nodes]
+
+#For "High DF" framework:
+D_max = [10.0 for all nodes]
+
+G_min = [0.0, 0.0, -2.0, -3.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -4.0, -5.0, -10.0, 0.0, 0.0, 0.0, -1.0, 0.0]
+
+#For "High FA" framework:
+G_max = [10.0, 10.0, 10.0, 0.0, 10.0, 5.0, 0.0, 0.0, 0.0, 0.0, 7.0, 15.0, 10.0, 0.0, 0.0, 10.0, 10.0, 0.0]
+
+#For "Low FA" framework:
+G_max = [2.5 for all nodes]
+
+#Demand cost coefficients
+A_tilde = [4.0, 2.0, 1.0, 1.5, 1.18, 1.0, 0.57, 1.24, 1.62, 1.54, 1.5, 0.31, 4.36, 1.63, 5.16, 1.96, 1.5, 1.5]
+B_tilde = [0.0 for i in range(community_size)]
+
+#Flexibility activation cost coefficients
+A = [4.0 for all nodes]
+B = [20.0 for all nodes]
+D = [0 for all nodes]
+
+#Target demand
+d_target = [6.0, 3.0, 3.0, 4, 6.57, 12.55, 8.75, 6.37, 4.33, 5.28, 3, 13.42, 3.27, 4.51, 3.26, 5.63, 4.0, 3.0]
+
+#Trading cost coefficients
+C_{nm} = [1 for all n,m]
+
+#Line reactance
+x_{nm} = [0.09 for all lines]
+
+#Line capacities 
+F_upper = [5.0 for all lines]
+F_lower = [-5.0 for all lines]
